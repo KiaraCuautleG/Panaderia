@@ -1,0 +1,9 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer {
+    background: #2e3135;
+    height: 300px;
+}
