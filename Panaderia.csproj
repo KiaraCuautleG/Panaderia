@@ -1717,11 +1717,18 @@
     <Content Include="assets\icons\webfonts\fa-brands-400.svg" />
     <Content Include="assets\icons\webfonts\fa-regular-400.svg" />
     <Content Include="assets\icons\webfonts\fa-solid-900.svg" />
+    <Content Include="assets\img\fondoPan6.jpg" />
+    <Content Include="assets\img\donut-2290320_1280.jpg" />
+    <Content Include="assets\img\donut-3696511_1280.jpg" />
+    <Content Include="assets\img\donut-5173390_1280.jpg" />
+    <Content Include="assets\img\donuts-3195532_1280.jpg" />
     <Content Include="assets\img\fondoPan4.jpg" />
     <Content Include="assets\img\fondoPan1.jpg" />
-    <Content Include="assets\img\fondoPan.jpg" />
     <Content Include="assets\img\fondoPan3.jpg" />
     <Content Include="assets\img\fondoPan5.jpg" />
+    <Content Include="assets\img\fondoPan7.jpg" />
+    <Content Include="assets\img\mockup-4020150_1280.jpg" />
+    <Content Include="assets\img\fondoPan9.jpg" />
     <Content Include="webForms\InicioSesion.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

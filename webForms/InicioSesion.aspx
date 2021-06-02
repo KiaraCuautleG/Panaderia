@@ -23,7 +23,7 @@
                 <asp:Label runat="server" Text="Contraseña" CssClass="lbl" ID="lblContraseña"/>
                 <div class="containerPassword">
                     <i class="iconP fas fa-lock"></i>
-                    <asp:TextBox runat="server" ID="txtContraseña" CssClass="txtContraseña" ></asp:TextBox>
+                    <asp:TextBox runat="server" ID="txtContraseña" TextMode="Password" CssClass="txtContraseña" ></asp:TextBox>
                 </div>
                 <div class="containerButton">
                     <asp:Button Text="Ingresar" ID="btnLogin" CssClass="btnIngresar" runat="server"/>
