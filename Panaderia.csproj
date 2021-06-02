@@ -1721,6 +1721,7 @@
     <Content Include="assets\img\fondoPan1.jpg" />
     <Content Include="assets\img\fondoPan.jpg" />
     <Content Include="assets\img\fondoPan3.jpg" />
+    <Content Include="assets\img\fondoPan5.jpg" />
     <Content Include="webForms\InicioSesion.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

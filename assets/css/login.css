@@ -4,17 +4,62 @@
     box-sizing: border-box;
 }
 body {
-    background: url(../img/fondoPan.jpg);
-    width: 100%;
-    object-fit: contain;
+    font-family: 'Poppins', sans-serif;
+    background: url("../img/fondoPan5.jpg");
+    background-size: cover;
 }
-.container{
-   text-align:center;
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-.containerLogin{
-   
+.containerLogin {
+    background: #5b1212;
+    width: 350px;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    border-radius: 15px;
+    border: 1px;
 }
-.fa-user-circle{
+.iconG {
+    font-size: 80px;
+    color: #fff;
+    opacity: 1;
+    margin: 20px 0px 20px 0px;
+}
+.lbl{
+    font-size:20px;
+    color: #fff;
+    text-align:left;
+    margin-left: 60px; 
+    font-weight: bold;
+}
+.containerUser, .containerPassword {
+    margin: 5px 0px 10px 0px;
+}
+.iconP{
     font-size:30px;
     color: #fff; 
+    opacity: 1;
+}
+.txtUsuario, .txtContraseña {
+    width: 220px;
+    font-size: 20px;
+    height: 40px;
+    color: #5b1212;
+    border-radius: 15px;
+    border: 1px;
+}
+.btnIngresar {
+    margin: 10px 0px 20px 0px;
+    width: 150px;
+    height: 50px;
+    color: #5b1212;
+    background: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px
 }
