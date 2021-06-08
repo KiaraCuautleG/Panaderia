@@ -13,5 +13,30 @@ namespace Panaderia.webForms
         {
 
         }
+
+        protected void lnk_Ventas(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lnk_VerVentas(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lnk_Inventario(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lnk_Productos(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lnk_Salir(object sender, EventArgs e)
+        {
+
+        }
     }
 }

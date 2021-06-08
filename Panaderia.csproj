@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\footer.css" />
+    <Content Include="assets\css\header.css" />
     <Content Include="assets\css\login.css" />
     <Content Include="assets\icons\attribution.js" />
     <Content Include="assets\icons\css\all.css" />
@@ -1729,10 +1730,30 @@
     <Content Include="assets\img\fondoPan7.jpg" />
     <Content Include="assets\img\mockup-4020150_1280.jpg" />
     <Content Include="assets\img\fondoPan9.jpg" />
+    <Content Include="assets\js\menu.js" />
+    <Content Include="webForms\ConsultarVentas.aspx" />
+    <Content Include="webForms\Factura.aspx" />
     <Content Include="webForms\InicioSesion.aspx" />
     <Content Include="Web.config" />
+    <Content Include="webForms\Inventario.aspx" />
+    <Content Include="webForms\Productos.aspx" />
+    <Content Include="webForms\Ventas.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="webForms\ConsultarVentas.aspx.cs">
+      <DependentUpon>ConsultarVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\ConsultarVentas.aspx.designer.cs">
+      <DependentUpon>ConsultarVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\Factura.aspx.cs">
+      <DependentUpon>Factura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\Factura.aspx.designer.cs">
+      <DependentUpon>Factura.aspx</DependentUpon>
+    </Compile>
     <Compile Include="webForms\InicioSesion.aspx.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1747,6 +1768,27 @@
     </Compile>
     <Compile Include="webForms\HeaderFooter.Master.designer.cs">
       <DependentUpon>HeaderFooter.Master</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\Inventario.aspx.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\Inventario.aspx.designer.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForms\Ventas.aspx.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForms\Ventas.aspx.designer.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -1814,7 +1856,6 @@
     <Content Include="webForms\HeaderFooter.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\js\" />
     <Folder Include="bd\" />
   </ItemGroup>
   <PropertyGroup>

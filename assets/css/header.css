@@ -1,0 +1,114 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("../img/fondoPan5.jpg");
+    background-size: cover;
+}
+
+.containerMenu {
+    width: 100%;
+  
+    height:auto;
+}
+
+.signOut {
+    width: 100%;
+    height: auto;
+    text-align:right;
+}
+
+.signOut .iconSignOut{
+    font-size: 50px;
+    color: #ffff;
+    background: #a52626;
+    margin:5px;
+}
+.containerMenu nav {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto; 
+    background: #ffff;
+    font-family: 'Lora', serif;
+    z-index: 1000;
+}
+
+.menu_bar {
+    display: none;
+}
+
+.containerMenu nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.containerMenu nav ul li {
+    /* float: left; */ /*Se quita porque habrá menus desplegables*/
+    display: inline-block;
+    position: relative;
+}
+
+.containerMenu nav ul li .link {
+    color: #3c1d08;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px; 
+    
+    
+}
+
+.containerMenu nav ul li a span {
+    margin: 20px;
+}
+
+    .containerMenu nav ul li a:hover {
+        background: #a52626;
+        color: #ffff;
+    }
+
+
+@media screen and (max-width:800px) {
+    .containerMenu nav {
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        left: -100%;
+        position: fixed;
+    }
+    .signOut {
+        display:none;
+    }
+    .iconSignOut2{
+        font-size:25px;
+        color:#ffff;
+        position:relative;
+        left:90%;
+    }
+    .containerMenu nav ul li {
+        display: block; /*Abarcara todo el ancho de li*/
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background: #a52626;
+    }
+
+    .menu_bar .bt-menu {
+        display: block; /*Para que abarque todo*/
+        padding: 20px;
+        background: #a52626;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        font-size: 25px;
+        box-sizing: border-box;
+    }
+}

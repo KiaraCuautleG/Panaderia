@@ -4,9 +4,16 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="../assets/icons/css/all.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/menu.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -14,7 +21,25 @@
     <form id="form1" runat="server">
         <div>
             <header>
-
+                <div class="containerMenu">
+                    <div class="signOut" >
+                        <asp:LinkButton  runat="server" ID="LinkButton1" OnClick="lnk_Salir"><i class="iconSignOut fas fa-sign-out-alt"></i></asp:LinkButton>     
+                    </div>
+                    <div class="menu_bar">
+                        <asp:LinkButton  runat="server" ID="LinkButton2" OnClick="lnk_Salir"><i class="iconSignOut2 fas fa-sign-out-alt"></i></asp:LinkButton>     
+                        <a href="#" class="bt-menu"><span></span>Menu</a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><asp:LinkButton CssClass="link" runat="server" ID="lnkVentas" Text="Ventas" OnClick="lnk_Ventas"></asp:LinkButton></li>
+                            <li><asp:LinkButton CssClass="link" runat="server" ID="lnkVerVentas" Text="Consultar ventas" OnClick="lnk_VerVentas"></asp:LinkButton></li>
+                            <li><asp:LinkButton CssClass="link" runat="server" ID="lnkInventario" Text="Control de inventario" OnClick="lnk_Inventario"></asp:LinkButton></li>
+                            <li><asp:LinkButton CssClass="link" runat="server" ID="lnkProductos" Text="Productos" OnClick="lnk_Productos"></asp:LinkButton></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+                
             </header>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
