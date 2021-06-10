@@ -70,7 +70,7 @@
     <Content Include="assets\css\footer.css" />
     <Content Include="assets\css\header.css" />
     <Content Include="assets\css\login.css" />
-    <Content Include="assets\css\ventas.css" />
+    <Content Include="assets\css\styles.css" />
     <Content Include="assets\icons\attribution.js" />
     <Content Include="assets\icons\css\all.css" />
     <Content Include="assets\icons\css\all.min.css" />

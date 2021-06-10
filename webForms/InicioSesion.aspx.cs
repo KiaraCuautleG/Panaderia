@@ -13,5 +13,10 @@ namespace Panaderia
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ventas.aspx");
+        }
     }
 }

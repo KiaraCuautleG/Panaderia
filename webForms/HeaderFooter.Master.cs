@@ -16,27 +16,27 @@ namespace Panaderia.webForms
 
         protected void lnk_Ventas(object sender, EventArgs e)
         {
-
+            Response.Redirect("Ventas.aspx");
         }
 
         protected void lnk_VerVentas(object sender, EventArgs e)
         {
-
+            Response.Redirect("ConsultarVentas.aspx");
         }
 
         protected void lnk_Inventario(object sender, EventArgs e)
         {
-
+            Response.Redirect("Inventario.aspx");
         }
 
         protected void lnk_Productos(object sender, EventArgs e)
         {
-
+            Response.Redirect("Productos.aspx");
         }
 
         protected void lnk_Salir(object sender, EventArgs e)
         {
-
+            Response.Redirect("InicioSesion.aspx");
         }
     }
 }

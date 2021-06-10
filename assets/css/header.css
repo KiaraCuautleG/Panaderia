@@ -49,7 +49,6 @@ body {
 }
 
 .containerMenu nav ul li {
-    /* float: left; */ /*Se quita porque habrá menus desplegables*/
     display: inline-block;
     position: relative;
 }

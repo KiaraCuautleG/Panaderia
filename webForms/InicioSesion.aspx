@@ -26,7 +26,7 @@
                     <asp:TextBox runat="server" ID="txtContraseña" TextMode="Password" CssClass="txtContraseña" ></asp:TextBox>
                 </div>
                 <div class="containerButton">
-                    <asp:Button Text="Ingresar" ID="btnLogin" CssClass="btnIngresar" runat="server"/>
+                    <asp:Button Text="Ingresar" ID="btnLogin" CssClass="btnIngresar" runat="server" OnClick="btnLogin_Click"/>
                 </div>
                 
             </div>

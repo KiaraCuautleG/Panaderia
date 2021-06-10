@@ -11,7 +11,7 @@
                 <asp:TextBox ID="TextBox1" runat="server" CssClass="txtBox" TextMode="Number"></asp:TextBox>
             </div>
             <div class="container">
-                <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropList"></asp:DropDownList>
                 <asp:Label runat="server" Text="Cantidad" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox2" runat="server" CssClass="txtBox" TextMode="Number"></asp:TextBox>
                 <asp:Label runat="server" Text="Precio" CssClass="label"></asp:Label>

@@ -10,6 +10,9 @@
 .containerVentas{
    display:flex;
 }
+.containerInventario {
+    display: flex;
+}
 .containerCenter {
     display: flex;
     justify-content: center;
@@ -43,19 +46,26 @@
     margin:0px auto;
 }
 .button {
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
     background: #a52626;
     color:#ffff; 
     font-size: 18px;
     border: none;
+}
+.dropList{
+    width:180px;
+    margin: 10px;
 }
 @media screen and (min-width:800px) {
     .containerVentas {
         display: grid;
         grid-template-columns: 15% 1fr 15%;
     }
-
+    .containerInventario {
+        display: grid;
+        grid-template-columns: 15% 1fr 15%;
+    }
     .containerCenter {
         grid-column: 2/3;
         width: 100%;

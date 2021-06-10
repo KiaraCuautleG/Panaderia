@@ -7,6 +7,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background: url("../img/fondoPan7.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container {
     display: flex;
