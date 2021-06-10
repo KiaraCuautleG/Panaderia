@@ -6,8 +6,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: url("../img/fondoPan5.jpg");
+    background: url("../img/fondoDona9.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .containerMenu {
@@ -31,8 +33,8 @@ body {
 .containerMenu nav {
     width: 90%;
     max-width: 1000px;
-    margin: 30px auto; 
-    background: #ffff;
+    margin: 30px auto;
+    background: #a52626;
     font-family: 'Lora', serif;
     z-index: 1000;
 }
@@ -53,11 +55,11 @@ body {
 }
 
 .containerMenu nav ul li .link {
-    color: #3c1d08;
+    color: #ffff;
     padding: 20px;
     text-decoration: none;
     display: block;
-    font-size: 20px; 
+    font-size: 18px; 
     
     
 }
@@ -67,8 +69,8 @@ body {
 }
 
     .containerMenu nav ul li a:hover {
-        background: #a52626;
-        color: #ffff;
+        background: #ffff;
+        color: #a52626;
     }
 
 

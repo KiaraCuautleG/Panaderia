@@ -70,6 +70,7 @@
     <Content Include="assets\css\footer.css" />
     <Content Include="assets\css\header.css" />
     <Content Include="assets\css\login.css" />
+    <Content Include="assets\css\ventas.css" />
     <Content Include="assets\icons\attribution.js" />
     <Content Include="assets\icons\css\all.css" />
     <Content Include="assets\icons\css\all.min.css" />
@@ -1718,21 +1719,24 @@
     <Content Include="assets\icons\webfonts\fa-brands-400.svg" />
     <Content Include="assets\icons\webfonts\fa-regular-400.svg" />
     <Content Include="assets\icons\webfonts\fa-solid-900.svg" />
+    <Content Include="assets\img\fondoDona9.jpg" />
+    <Content Include="assets\img\fondoChocolate.jpg" />
+    <Content Include="assets\img\fondoDona4.jpg" />
+    <Content Include="assets\img\fondoDona7.jpg" />
+    <Content Include="assets\img\fondoDona5.jpg" />
     <Content Include="assets\img\fondoPan6.jpg" />
-    <Content Include="assets\img\donut-2290320_1280.jpg" />
-    <Content Include="assets\img\donut-3696511_1280.jpg" />
-    <Content Include="assets\img\donut-5173390_1280.jpg" />
-    <Content Include="assets\img\donuts-3195532_1280.jpg" />
-    <Content Include="assets\img\fondoPan4.jpg" />
-    <Content Include="assets\img\fondoPan1.jpg" />
-    <Content Include="assets\img\fondoPan3.jpg" />
-    <Content Include="assets\img\fondoPan5.jpg" />
+    <Content Include="assets\img\fondoDona8.jpg" />
+    <Content Include="assets\img\fondoDona6.jpg" />
     <Content Include="assets\img\fondoPan7.jpg" />
-    <Content Include="assets\img\mockup-4020150_1280.jpg" />
     <Content Include="assets\img\fondoPan9.jpg" />
+    <Content Include="assets\img\gridView\addnew.png" />
+    <Content Include="assets\img\gridView\cancel.png" />
+    <Content Include="assets\img\gridView\delete.png" />
+    <Content Include="assets\img\gridView\edit.png" />
+    <Content Include="assets\img\gridView\save.png" />
+    <Content Include="assets\img\pink-5181799_1280.jpg" />
     <Content Include="assets\js\menu.js" />
     <Content Include="webForms\ConsultarVentas.aspx" />
-    <Content Include="webForms\Factura.aspx" />
     <Content Include="webForms\InicioSesion.aspx" />
     <Content Include="Web.config" />
     <Content Include="webForms\Inventario.aspx" />
@@ -1746,13 +1750,6 @@
     </Compile>
     <Compile Include="webForms\ConsultarVentas.aspx.designer.cs">
       <DependentUpon>ConsultarVentas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="webForms\Factura.aspx.cs">
-      <DependentUpon>Factura.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="webForms\Factura.aspx.designer.cs">
-      <DependentUpon>Factura.aspx</DependentUpon>
     </Compile>
     <Compile Include="webForms\InicioSesion.aspx.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
