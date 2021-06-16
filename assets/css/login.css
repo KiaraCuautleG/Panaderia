@@ -21,7 +21,7 @@ body {
     opacity: .8;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 80px;
     border-radius: 15px;
     border: 1px;
 }
@@ -38,8 +38,24 @@ body {
     margin-left: 60px; 
     font-weight: bold;
 }
+.validacion {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    margin: 0px 85px;
+    font-weight: bold;
+}
+.datosIncorrectos {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    margin: 0px 15px;
+    font-weight: bold;
+}
 .containerUser, .containerPassword {
-    margin: 5px 0px 10px 0px;
+    margin: 0px;
 }
 .iconP{
     font-size:30px;
