@@ -13,5 +13,23 @@ namespace Panaderia.webForms
 
     public partial class ConsultarVentas
     {
+
+        /// <summary>
+        /// Control GridViewVentas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewVentas;
+
+        /// <summary>
+        /// Control DetalleVenta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView DetalleVenta;
     }
 }

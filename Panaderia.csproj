@@ -1736,6 +1736,8 @@
     <Content Include="assets\img\gridView\save.png" />
     <Content Include="assets\img\pink-5181799_1280.jpg" />
     <Content Include="assets\js\menu.js" />
+    <Content Include="assets\js\ventas.js" />
+    <Content Include="bd\Creación.sql" />
     <Content Include="webForms\ConsultarVentas.aspx" />
     <Content Include="webForms\InicioSesion.aspx" />
     <Content Include="Web.config" />
@@ -1852,9 +1854,7 @@
     </None>
     <Content Include="webForms\HeaderFooter.Master" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bd\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

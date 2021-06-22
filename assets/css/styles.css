@@ -7,9 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-    .containerVentas, .containerInventario, .containerProducto {
-        display: flex;
-    }
+.containerVentas, .containerInventario, .containerProducto, .containerConsultarVentas {
+    display: flex;
+}
 .containerCenter {
     display: flex;
     justify-content: center;
@@ -25,9 +25,33 @@
     justify-content: center;
     padding: 20px 30px;
     width: 100%;
-    border: 1px solid #c1bfbf; 
-    border-radius: 4px; 
+    border: 1px solid #c1bfbf;
+    border-radius: 4px;
+}
+.containerTb {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 30px;
+    width: 100%;
+    border: 1px solid #c1bfbf;
+    border-radius: 4px;
+    justify-content: center;
+}
 
+.containerTitulo {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 30px;
+    width: 100%;
+    border: 1px solid #c1bfbf;
+    border-radius: 4px;
+}
+h1 {
+    color: #a52626;
 }
 .label{
     margin:10px 0px;
@@ -54,6 +78,15 @@
     width:180px;
     margin: 10px;
 }
+.gridView{
+    margin: 0px 20px;
+    display:flex;
+    justify-content:center;
+}
+.lblSuccessMessage, .lblErrorMessage{
+    text-align:center;
+    font-size: 22px;
+}
 @media screen and (min-width:800px) {
     .containerVentas {
         display: grid;
@@ -71,7 +104,16 @@
         flex-direction:column;
 
     }
-
+    .containerSecond, #ocultar{
+        background: #ffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 30px;
+        width: 100%;
+        border: 1px solid #c1bfbf;
+        border-radius: 4px;
+    }
     .container {
         display: flex;
         flex-direction: row;
@@ -80,8 +122,9 @@
         width: 100%;
         margin: 10px 0px;
     }
-    .calendar{
-        margin:0px;
+    
+    .calendar {
+        margin: 0px;
     }
     .label{
         margin: 10px;
