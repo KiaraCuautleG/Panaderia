@@ -27,6 +27,7 @@
                 
                     <Columns>
                         <asp:TemplateField HeaderText="ID">
+                            
                             <ItemTemplate>
                                 <asp:Label Text='<%# Eval("ID_Pan") %>' runat="server" />
                             </ItemTemplate>
@@ -80,6 +81,7 @@
                             </FooterTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField>
+                            
                             <ItemTemplate>
                                 <asp:ImageButton ImageUrl="../assets/img/gridView/edit.png" runat="server" CommandName="Edit" ToolTip="Edit" Width="20px" Height="20px"/>
                                 <asp:ImageButton ImageUrl="../assets/img/gridView/delete.png" runat="server" CommandName="Delete" ToolTip="Delete" Width="20px" Height="20px"/>

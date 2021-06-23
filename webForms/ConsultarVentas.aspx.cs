@@ -29,13 +29,19 @@ namespace Panaderia.webForms
             using (SqlConnection sqlCon = new SqlConnection(cnn))
             {
                 sqlCon.Open();
+
+                /*El SqlDataAdapter, actúa como puente entre un DataSet y SQL Server para recuperar
+                 * y guardar datos y proporciona este puente mediante la asignación de Fill,*/
+                /*SE Usa COnvert para que solo nos devuelva la fecha de la venta*/
                 SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT ID_Venta, Convert(VARCHAR(10), Fecha_Venta) Fecha_Venta, Total_Venta FROM Venta ", sqlCon);
                 sqlDa.Fill(dtbl);
             }
             if (dtbl.Rows.Count > 0)
             {
+                /*DataSource hace referencia a la fuente de datos,*/
                 GridViewVentas.DataSource = dtbl;
-               GridViewVentas.DataBind();
+                /*lo que hace este metodo es enlazar los datos del origen de datos al control*/
+                GridViewVentas.DataBind();
             }
             else
             {

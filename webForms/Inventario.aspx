@@ -20,7 +20,7 @@
                 <asp:Label ID="lblSuccessMessage" CssClass="lblSuccessMessage" Text="" runat="server" ForeColor="Green" />
                 
                 <asp:Label ID="lblErrorMessage"  CssClass="lblErrorMessage" Text="" runat="server" ForeColor="Red" />
-              <asp:GridView ID="gvInventario" CssClass="gridView" runat="server" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="ID_Pan"
+              <asp:GridView ID="gvInventario" CssClass="gridView" runat="server" AutoGenerateColumns="false" ShowFooter="false" DataKeyNames="ID_Pan"
                     ShowHeaderWhenEmpty="true"
                     OnRowEditing="gvPhoneBook_RowEditing" OnRowCancelingEdit="gvPhoneBook_RowCancelingEdit"
                     OnRowUpdating="gvPhoneBook_RowUpdating" OnRowDeleting="gvPhoneBook_RowDeleting"

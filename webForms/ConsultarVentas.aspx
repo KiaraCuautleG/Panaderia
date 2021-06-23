@@ -10,7 +10,7 @@
                 <h1 style="text-align:center">Consulta de ventas</h1>
             </div>
             <div class="container">
-                <asp:GridView ID="GridViewVentas" CssClass="gridView" runat="server" AutoGenerateColumns="false" ShowFooter="true" 
+                <asp:GridView ID="GridViewVentas" CssClass="gridView" runat="server" AutoGenerateColumns="false" ShowFooter="false" 
                     ShowHeaderWhenEmpty="true"
 
                     BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" >
@@ -28,6 +28,7 @@
                     <Columns>
                         <asp:TemplateField ControlStyle-Width="100px" HeaderText="ID Ventas">
                             <ItemTemplate>
+                                <!--La función incorporada eval permite ejecutar una cadena de código.-->
                                 <asp:Label Text='<%# Eval("ID_Venta") %>' runat="server" />
                             </ItemTemplate>
                         </asp:TemplateField>
@@ -44,7 +45,7 @@
                       
                     </Columns>
               </asp:GridView>
-                <asp:GridView ID="DetalleVenta" CssClass="gridView" runat="server" AutoGenerateColumns="false" ShowFooter="true" 
+                <asp:GridView ID="DetalleVenta" CssClass="gridView" runat="server" AutoGenerateColumns="false" ShowFooter="false" 
                     ShowHeaderWhenEmpty="true"
 
 

@@ -9,6 +9,7 @@
                 <asp:Label ID="lblErrorMessage2"  CssClass="lblErrorMessage" Text="" runat="server" ForeColor="Red" />
                 <h1>Ventas</h1>
             </div>
+            <!-- Container de inicio de ventas-->
             <div class="container">
                 <asp:Label runat="server" ID="lblF" Text="Fecha" CssClass="label"></asp:Label>
                 <asp:Calendar ID="Calendar1" runat="server" CssClass="calendar" ></asp:Calendar>
@@ -16,6 +17,7 @@
                 <asp:Label ID="lblIDVenta" ForeColor="#a52626" runat="server" CssClass="label" ></asp:Label>
                 <asp:Button ID="btnIniciarVenta" runat="server" Text="Iniciar Venta" CssClass="button" OnClick="btnIniciarVenta_Click" />
             </div>
+            <!-- Container para agregar un producto a la venta-->
             <div class="container" >
                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropList" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
                 <asp:Label runat="server" Text="Cantidad" CssClass="label"></asp:Label>
@@ -25,8 +27,9 @@
                 <asp:Button ID="btnAgregar" runat="server" Text="Agregar" CssClass="button" OnClick="btnAgregar_Click" />
                 
             </div>
+            <!-- Container para visualizar los productos de la venta-->
             <div class="container" >
-                <asp:GridView ID="gvVentas" runat="server" AutoGenerateColumns="false" ShowFooter="true" 
+                <asp:GridView ID="gvVentas" runat="server" AutoGenerateColumns="false" ShowFooter="false" 
                     ShowHeaderWhenEmpty="true"
                     BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" >
                     <%-- Theme Properties --%>
@@ -43,6 +46,7 @@
                     <Columns>
                         <asp:TemplateField ControlStyle-Width="150px"  HeaderText="Pan">
                             <ItemTemplate >
+                                <!--La función incorporada eval permite ejecutar una cadena de código.-->
                                 <asp:Label Text='<%# Eval("Nombre_Pan") %>' runat="server" />
                             </ItemTemplate>
                         
@@ -68,6 +72,7 @@
                 </Columns>
               </asp:GridView>
             </div>
+            <!-- Container para enviar la venta-->
             <div class="container" >
                 <asp:Label runat="server" Text="Total" CssClass="label"></asp:Label>
                 <asp:Label runat="server" Text="" id="lblTotal" ForeColor="Red" CssClass="label"></asp:Label>

@@ -20,6 +20,7 @@ namespace Panaderia.webForms
                 PopulateGridview();
             }
         }
+        /*basicamente esta funcion es para poner en la tabla toda la información*/
         void PopulateGridview()
         {
             string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
@@ -27,12 +28,16 @@ namespace Panaderia.webForms
             using (SqlConnection sqlCon = new SqlConnection(cnn))
             {
                 sqlCon.Open();
+                /*El SqlDataAdapter, actúa como puente entre un DataSet y SQL Server para recuperar
+                 * y guardar datos y proporciona este puente mediante la asignación de Fill,*/
                 SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT Inventario_Existencias.ID_Pan, Pan.Nombre_Pan, Inventario_Existencias.Cantidad_Existencias, Pan.Precio_Pan FROM Inventario_Existencias JOIN Pan ON Inventario_Existencias.ID_Pan = Pan.ID_Pan", sqlCon);
                 sqlDa.Fill(dtbl);
             }
             if (dtbl.Rows.Count > 0)
             {
+                /*DataSource hace referencia a la fuente de datos,*/
                 gvInventario.DataSource = dtbl;
+                /*lo que hace este metodo es enlazar los datos del origen de datos al control*/
                 gvInventario.DataBind();
             }
             else
@@ -113,19 +118,25 @@ namespace Panaderia.webForms
                 lblErrorMessage.Text = ex.Message;
             }
         }
-
+        /*
+         Este evento GridView se usa para cambiar el modo GridView. Este evento se genera cuando 
+        se hace clic en el botón de edición de una fila, pero antes de que GridView entre en el modo 
+        de edición.*/
         protected void gvPhoneBook_RowEditing(object sender, GridViewEditEventArgs e)
         {
             gvInventario.EditIndex = e.NewEditIndex;
             PopulateGridview();
         }
-
+        /*Este evento se genera cuando cancelamos la actualización de un registro, 
+         * lo que significa que lo usamos cuando estamos en modo de edición de un GridView 
+         * y queremos que GridView vuelva al modo de visualización sin ninguna actualización.*/
         protected void gvPhoneBook_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
             gvInventario.EditIndex = -1;
             PopulateGridview();
         }
 
+        /*este metodo nos permite actualizar los datos de las correspondientes filas*/
         protected void gvPhoneBook_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             try
@@ -137,6 +148,7 @@ namespace Panaderia.webForms
                     sqlCon.Open();
                     string query = "UPDATE Inventario_Existencias SET Cantidad_Existencias=@CantidadExistencias WHERE ID_Inventario=1 AND ID_Pan = @idPan";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                    /*Se usa para la actualizacion de los datos que ya esten insetados, obtiene los datos que esten el las seldas para modificar*/
                     sqlCmd.Parameters.AddWithValue("@CantidadExistencias", double.Parse((gvInventario.Rows[e.RowIndex].FindControl("txtCantidadExistencia") as TextBox).Text.Trim()));
                     
                     sqlCmd.Parameters.AddWithValue("@idPan", Convert.ToInt32(gvInventario.DataKeys[e.RowIndex].Value.ToString()));
@@ -158,6 +170,7 @@ namespace Panaderia.webForms
 
         }
 
+        /* se usa para borrar alguna fila que ya no se quiera*/
         protected void gvPhoneBook_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             try
@@ -168,6 +181,7 @@ namespace Panaderia.webForms
                     sqlCon.Open();
                     string query = "DELETE FROM Inventario_Existencias WHERE ID_Inventario=1 AND ID_Pan = @idPan";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                    /*obtiene el parametro que tenga la llave primaria para borrar el registro con ese parametro*/
                     sqlCmd.Parameters.AddWithValue("@idPan", Convert.ToInt32(gvInventario.DataKeys[e.RowIndex].Value.ToString()));
                     sqlCmd.ExecuteNonQuery();
                     PopulateGridview();
