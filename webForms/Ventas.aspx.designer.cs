@@ -42,13 +42,13 @@ namespace Panaderia.webForms
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
 
         /// <summary>
-        /// Control txtIDVenta.
+        /// Control lblIDVenta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIDVenta;
+        protected global::System.Web.UI.WebControls.Label lblIDVenta;
 
         /// <summary>
         /// Control btnIniciarVenta.

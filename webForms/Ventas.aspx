@@ -12,8 +12,8 @@
             <div class="container">
                 <asp:Label runat="server" Text="Fecha" CssClass="label"></asp:Label>
                 <asp:Calendar ID="Calendar1" runat="server" CssClass="calendar" ></asp:Calendar>
-                <asp:Label runat="server"  Text="ID Venta" CssClass="label"></asp:Label>
-                <asp:TextBox ID="txtIDVenta" runat="server" CssClass="txtBox" TextMode="Number"></asp:TextBox>
+                <asp:Label runat="server"  Text="ID Venta:" CssClass="label"></asp:Label>
+                <asp:Label ID="lblIDVenta" ForeColor="#a52626" runat="server" CssClass="label" ></asp:Label>
                 <asp:Button ID="btnIniciarVenta" runat="server" Text="Iniciar Venta" CssClass="button" OnClick="btnIniciarVenta_Click" />
             </div>
             <div class="container" >

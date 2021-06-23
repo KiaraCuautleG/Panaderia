@@ -18,40 +18,51 @@ namespace Panaderia.webForms
             if (!IsPostBack)
             {
                 LlenadoDropDown();
+                ObtenerIdVenta();
+                txtCantidad.Enabled = false;
+                DropDownList1.Enabled = false;
+                btnAgregar.Enabled = false;
+                btnEnviar.Enabled = false;
 
             }
         }
-        /*public void ObtenerIdVenta()
+        public void ObtenerIdVenta()
         {
             string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
             using (SqlConnection conexion = new SqlConnection(cnn))
             {
                 conexion.Open();
-                string query = "SELECT ID_Venta FROM Venta WHERE ID_Pan =" ;
+                string query = "SELECT TOP 1 [ID_Venta] FROM Venta ORDER BY [ID_Venta] DESC ";
                 SqlCommand comando = new SqlCommand(query, conexion);
 
-               idVentas = Double.Parse(comando.ExecuteScalar().ToString());
+
+                double utlimoId = Double.Parse(comando.ExecuteScalar().ToString()) + 1;
+                lblIDVenta.Text = utlimoId.ToString();  
                 conexion.Close();
             }
-        }*/
+        }
         /*-----------------------------------INICIAR VENTA-----------------------------*/
         protected void btnIniciarVenta_Click(object sender, EventArgs e)
         {
             IniciarVenta();
             //ClientScript.RegisterStartupScript(GetType(), "mostrar", "diHola();", true);
+            
         }
         public void IniciarVenta()
         {
             try
             {
-                 idVentas = Int32.Parse(txtIDVenta.Text);
+                 idVentas = Int32.Parse(lblIDVenta.Text);
                  double total = 0;
                  string fecha =  Calendar1.SelectedDate.Year.ToString()+"-"+ Calendar1.SelectedDate.Month.ToString() + "-"+ Calendar1.SelectedDate.Day.ToString() ;
                  string cad = "INSERT INTO Venta(ID_Venta, Fecha_Venta, Total_Venta, ID_Usuario) VALUES (" + idVentas + ",'" + fecha + "'," + total + ", '1')";
-                string edoVenta = "Venta iniciada";
+                 string edoVenta = "Venta iniciada";
                   Conexion(cad, edoVenta);
-                
-                  
+
+                txtCantidad.Enabled = true;
+                DropDownList1.Enabled = true;
+                btnAgregar.Enabled = true;
+                btnEnviar.Enabled = true;
             }
             catch (Exception ex)
             {
