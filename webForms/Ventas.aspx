@@ -10,7 +10,7 @@
                 <h1>Ventas</h1>
             </div>
             <div class="container">
-                <asp:Label runat="server" Text="Fecha" CssClass="label"></asp:Label>
+                <asp:Label runat="server" ID="lblF" Text="Fecha" CssClass="label"></asp:Label>
                 <asp:Calendar ID="Calendar1" runat="server" CssClass="calendar" ></asp:Calendar>
                 <asp:Label runat="server"  Text="ID Venta:" CssClass="label"></asp:Label>
                 <asp:Label ID="lblIDVenta" ForeColor="#a52626" runat="server" CssClass="label" ></asp:Label>

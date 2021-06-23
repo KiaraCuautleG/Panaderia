@@ -52,17 +52,26 @@ namespace Panaderia.webForms
         {
             try
             {
-                 idVentas = Int32.Parse(lblIDVenta.Text);
-                 double total = 0;
-                 string fecha =  Calendar1.SelectedDate.Year.ToString()+"-"+ Calendar1.SelectedDate.Month.ToString() + "-"+ Calendar1.SelectedDate.Day.ToString();
-                 string cad = "INSERT INTO Venta(ID_Venta, Fecha_Venta, Total_Venta, ID_Usuario) VALUES (" + idVentas + ",'" + fecha + "'," + total + ", '1')";
-                 string edoVenta = "Venta iniciada";
-                  Conexion(cad, edoVenta);
+                if(Calendar1.SelectedDate.ToShortDateString() != "01/01/0001")
+                {
+                    idVentas = Int32.Parse(lblIDVenta.Text);
+                    double total = 0;
+                    string fecha = Calendar1.SelectedDate.Year.ToString() + "-" + Calendar1.SelectedDate.Month.ToString() + "-" + Calendar1.SelectedDate.Day.ToString();
+                    string cad = "INSERT INTO Venta(ID_Venta, Fecha_Venta, Total_Venta, ID_Usuario) VALUES (" + idVentas + ",'" + fecha + "'," + total + ", '1')";
+                    string edoVenta = "Venta iniciada";
+                    Conexion(cad, edoVenta);
 
-                txtCantidad.Enabled = true;
-                DropDownList1.Enabled = true;
-                btnAgregar.Enabled = true;
-                btnEnviar.Enabled = true;
+                    txtCantidad.Enabled = true;
+                    DropDownList1.Enabled = true;
+                    btnAgregar.Enabled = true;
+                    btnEnviar.Enabled = true;
+                    lblErrorMessage.Text = "";
+                }
+                else
+                {
+                    lblErrorMessage.Text = "Seleccione una fecha";
+                }
+                 
             }
             catch (Exception ex)
             {
