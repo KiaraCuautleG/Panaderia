@@ -29,7 +29,7 @@ namespace Panaderia.webForms
             using (SqlConnection sqlCon = new SqlConnection(cnn))
             {
                 sqlCon.Open();
-                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Venta", sqlCon);
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT ID_Venta, Convert(VARCHAR(10), Fecha_Venta) Fecha_Venta, Total_Venta FROM Venta ", sqlCon);
                 sqlDa.Fill(dtbl);
             }
             if (dtbl.Rows.Count > 0)

@@ -54,7 +54,7 @@ namespace Panaderia.webForms
             {
                  idVentas = Int32.Parse(lblIDVenta.Text);
                  double total = 0;
-                 string fecha =  Calendar1.SelectedDate.Year.ToString()+"-"+ Calendar1.SelectedDate.Month.ToString() + "-"+ Calendar1.SelectedDate.Day.ToString() ;
+                 string fecha =  Calendar1.SelectedDate.Year.ToString()+"-"+ Calendar1.SelectedDate.Month.ToString() + "-"+ Calendar1.SelectedDate.Day.ToString();
                  string cad = "INSERT INTO Venta(ID_Venta, Fecha_Venta, Total_Venta, ID_Usuario) VALUES (" + idVentas + ",'" + fecha + "'," + total + ", '1')";
                  string edoVenta = "Venta iniciada";
                   Conexion(cad, edoVenta);
